@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sample-deploy
+  name: sample-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sample-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sample-deploy
+    spec:
+      containers:
+      - image: yeshwanthbheempad/sample-app:latest
+        name: sample-app
+        ports:
+        - containerPort: 3000
+        resources: {}
+status: {}
