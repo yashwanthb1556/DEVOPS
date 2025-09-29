@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  first: yeshwanth
+  last: bheemapaka
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: first-cm
